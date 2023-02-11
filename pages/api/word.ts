@@ -1,4 +1,3 @@
-import { type NextRequest, NextResponse } from 'next/server'
 import { getWordsList } from 'most-common-words-by-language'
 import { NextApiRequest, NextApiResponse } from 'next'
 
@@ -57,7 +56,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   if (data.error) {
     console.error('OpenAI API error: ', data.error)
-    return NextResponse.json({
+    return res.json({
       text: `ERROR with API integration. ${data.error.message}`,
     })
   }
