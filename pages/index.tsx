@@ -125,7 +125,7 @@ function Home() {
   }, [words, card, handleNext, index, setIndex, isRepeating, lang])
 
   useEffect(() => {
-    setWords(JSON.parse(localStorage.getItem('words') || '') ?? [])
+    setWords(JSON.parse(localStorage.getItem('words') || '[]') ?? [])
     setLang(localStorage.getItem('lang') || 'en')
   }, [])
 
