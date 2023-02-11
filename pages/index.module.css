@@ -1,0 +1,72 @@
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 768px;
+  min-height: 100vh;
+  padding: 0 36px;
+  margin: 0 auto;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col {
+  
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  min-width: 400px;
+  min-height: 300px;
+  border-radius: 16px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+  margin: 12px 0;
+}
+
+.cardFooter {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.button {
+  background: #000;
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.buttonPrimary {
+  background: blue;
+}
+
+.radioGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 24px 0;
+}
+
+.radioGroup label:not(:last-child) {
+  margin-right: 12px;
+}
